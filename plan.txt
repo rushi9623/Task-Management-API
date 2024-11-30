@@ -1,0 +1,9 @@
+user routes : 1) register route . 
+added middleqare 
+2 admin route , create read , update , delete 
+
+Explanation of the Task Management Routes:
+POST /api/task/: This route allows admins to create new tasks. It is protected by the auth middleware and the roleAuthorization middleware.
+GET /api/task/: This route allows all authenticated users to view all tasks. It populates the assigned user details for clarity.
+PUT /api/task/:id: This route allows admins to update a specific task. It is also protected by the same middleware.
+DELETE /api/task/:id: This route allows admins to delete a specific task, similarly protected.
